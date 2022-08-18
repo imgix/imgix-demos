@@ -19,13 +19,13 @@ const Alert = (props: AlertProps) => {
         })}
       >
         <Container>
-          <div className="py-2 text-center text-sm">
+          <div className="py-2 text-sm text-center">
             {preview ? (
               <>
                 This is page is a preview.{' '}
                 <Link
                   href="/api/exit-preview"
-                  className="underline hover:text-cyan duration-200 transition-colors"
+                  className="underline transition-colors duration-200 hover:text-cyan"
                 >
                   Click here
                 </Link>{' '}
@@ -35,8 +35,8 @@ const Alert = (props: AlertProps) => {
               <>
                 The source code for this blog is{' '}
                 <a
-                  href={`https://github.com/cosmicjs/next-merge`}
-                  className="underline hover:text-success duration-200 transition-colors"
+                  href={`https://github.com/daletom`}
+                  className="underline transition-colors duration-200 hover:text-success"
                 >
                   available on GitHub
                 </a>

@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import PostBody from '@/components/post-body'
-import MoreStories from '@/components/more-stories'
+import PostEmbed from '@/components/post-embed'
+import MoreDemos from '@/components/more-demos'
 import Header from '@/components/header'
 import PostHeader from '@/components/post-header'
 import SectionSeparator from '@/components/section-separator'
@@ -79,7 +80,6 @@ const Post = (props: PostProps) => {
             merge_id &&
             <RemoveMergeContentBanner />
           }
-          <Header />
           {router.isFallback ? (
             <PostTitle>Loading…</PostTitle>
           ) : (
@@ -97,13 +97,17 @@ const Post = (props: PostProps) => {
                 <PostHeader
                   title={post.title}
                   coverImage={post.metadata.cover_image}
+                  excerpt={post.metadata.excerpt}
                   date={post.created_at}
                   author={post.metadata.author}
+                />
+                <PostEmbed
+                  embed={post.metadata.embed}
                 />
                 <PostBody content={post['content']} />
               </article>
               <SectionSeparator />
-              {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+              {morePosts.length > 0 && <MoreDemos posts={morePosts} />}
             </div>
           )}
         </DynamicContainer>

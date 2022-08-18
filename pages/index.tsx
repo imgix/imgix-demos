@@ -1,4 +1,4 @@
-import MoreStories from "@/components/more-stories";
+import MoreDemos from "@/components/more-demos";
 import HeroPost from "@/components/hero-post";
 import Intro from "@/components/intro";
 import Layout from "@/components/layout";
@@ -39,35 +39,24 @@ const Index = (props: IndexProps) => {
   const loadingMerge = merge_id && !mergePosts;
 
   allPosts = _.orderBy(allPosts, ["created_at"], ["desc"]);
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
+  const morePosts = allPosts;
 
   return (
     <div>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>imgix Demo Site</title>
         </Head>
         <DynamicContainer>
           {merge_id && <RemoveMergeContentBanner />}
           {loadingMerge ? (
-            <h1 className="mt-12 text-center text-4xl font-bold tracking-tighter leading-tight">
+            <h1 className="mt-12 text-4xl font-bold leading-tight tracking-tighter text-center">
               Loading Merge Preview...
             </h1>
           ) : (
             <div>
               <Intro />
-              {heroPost && (
-                <HeroPost
-                  title={heroPost.title}
-                  coverImage={heroPost.metadata.cover_image}
-                  date={heroPost.created_at}
-                  author={heroPost.metadata.author}
-                  slug={heroPost.slug}
-                  excerpt={heroPost.metadata.excerpt}
-                />
-              )}
-              {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+              {morePosts.length > 0 && <MoreDemos posts={morePosts} />}
             </div>
           )}
         </DynamicContainer>

@@ -1,4 +1,4 @@
-import Alert from './alert'
+//import Alert from './alert'
 import Footer from './footer'
 import Meta from './meta'
 import 'lazysizes'
@@ -19,7 +19,6 @@ const Layout = (props: LayoutProps) => {
     <>
       <Meta />
       <div className="min-h-screen">
-        <Alert preview={preview} />
         <main>{children}</main>
       </div>
       <Footer />

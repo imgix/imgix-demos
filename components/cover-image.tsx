@@ -21,14 +21,14 @@ const CoverImage = (props: CoverImageProps) => {
       className={cn('lazyload shadow-small w-full', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
-      sizes="100vw"
+      sizes="(min-width: 1024px) 40vw, 90vw"
       attributeConfig={{
         src: 'data-src',
         srcSet: 'data-srcset',
         sizes: 'data-sizes',
       }}
       htmlAttributes={{
-        src: `${url}?auto=format,compress&q=1&blur=500&w=auto`,
+        src: `${url}?auto=format,compress&q=1&w=10`,
       }}
     />
   )
