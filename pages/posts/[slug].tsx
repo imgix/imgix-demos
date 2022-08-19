@@ -87,7 +87,7 @@ const Post = (props: PostProps) => {
               <article>
                 <Head>
                   <title>
-                    {Post['title']} | Next.js Blog Example with {CMS_NAME}
+                    {Post['title']} | imgix Demo Site
                   </title>
                   <meta
                     property="og:image"
@@ -98,7 +98,6 @@ const Post = (props: PostProps) => {
                   title={post.title}
                   coverImage={post.metadata.cover_image}
                   excerpt={post.metadata.excerpt}
-                  date={post.created_at}
                   author={post.metadata.author}
                 />
                 <PostEmbed
