@@ -4,7 +4,7 @@ import Intro from "@/components/intro";
 import Layout from "@/components/layout";
 import { getAllPostsForHome } from "@/lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "@/lib/constants";
+
 import useSWR from "swr";
 import _ from "lodash";
 import { getMergeId, combineMergeContent } from "@/lib/merge";

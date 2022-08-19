@@ -1,5 +1,2 @@
-export const EXAMPLE_PATH = 'cms-cosmic'
-export const CMS_NAME = 'Cosmic'
-export const CMS_URL = 'https://cosmicjs.com/'
 export const HOME_OG_IMAGE_URL =
-  'https://og-image.now.sh/Next.js%20Example%20Blog%20with%20**Cosmic**.png?theme=light&md=1&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg&images=https%3A%2F%2Fweb-assets.cosmicjs.com%2Fimages%2Flogo.svg'
+  'https://assets.imgix.net/og/mountains.jpg?auto=format&markpad=0&blend64=MzM1YjgxOWQ&bm=screen&txtalign=center&txtpad=80&txtfit=max&txtsize=36&txtclr=fff&txtfont64=QXZlbmlyIE5leHQgRGVtaSwgQm9sZA&q=99&markalign=middle%2C%20center&mark64=aHR0cHM6Ly9hc3NldHMuaW1naXgubmV0L3ByZXNza2l0L2ltZ2l4LXByZXNza2l0LnBkZj9peGxpYj1yYi0xLjEuMCZ3PTY0MCZmbT1wbmcmcGFnZT00&w=1200&fit=crop&h=630&txt64=VGhlIGVuZC10by1lbmQgcGxhdGZvcm0gZm9yIHZpc3VhbCBtZWRpYSBwcm9jZXNzaW5n'
