@@ -1,5 +1,8 @@
 module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
   theme: {
     extend: {
       colors: {
@@ -10,6 +13,7 @@ module.exports = {
         cyan: '#79FFE1',
         ixdark: '#142541',
         ixmed: '#35668D',
+        ixlblue: '#00BFFE',
       },
       spacing: {
         28: '7rem',
