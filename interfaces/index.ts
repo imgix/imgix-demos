@@ -21,5 +21,6 @@ export type Post = {
     author: Author;
     excerpt: string;
     content: string;
+    embed: string;
   }
 };
