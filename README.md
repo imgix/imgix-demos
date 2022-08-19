@@ -7,7 +7,7 @@ Includes [Cosmic merge request](https://www.cosmicjs.com/blog/introducing-merge-
 
 ## Demo
 
-[https://cosmic-next-blog.vercel.app/](https://cosmic-next-blog.vercel.app/)
+[https://next-merge-tomdale.vercel.app/](https://next-merge-tomdale.vercel.app/)
 
 ## Deploy your own
 
