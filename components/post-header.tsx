@@ -1,5 +1,5 @@
 import Avatar from './avatar'
-import Date from './date'
+//import Date from './date'
 import CoverImage from './cover-image'
 import PostTitle from './post-title'
 import { Author, Imgix } from 'interfaces'
@@ -16,7 +16,6 @@ const navigation = [
 type PostHeaderProps = {
   title: string,
   coverImage: Imgix,
-  date: string,
   author: Author,
   excerpt: string
 };
@@ -25,7 +24,6 @@ const PostHeader = (props: PostHeaderProps) => {
   const {
     title,
     coverImage,
-    date,
     excerpt,
     author
   } = props;
@@ -95,7 +93,7 @@ const PostHeader = (props: PostHeaderProps) => {
                       <img
                         className="w-auto h-8"
                         src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=100"
-                        alt=""
+                        alt="imgix logo"
                       />
                     </div>
                     <div className="-mr-2">
@@ -125,7 +123,6 @@ const PostHeader = (props: PostHeaderProps) => {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight">
               <PostTitle>{title}</PostTitle>
-                
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               {excerpt}
