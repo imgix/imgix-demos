@@ -8,6 +8,8 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        ixdark: '#142541',
+        ixmed: '#35668D',
       },
       spacing: {
         28: '7rem',

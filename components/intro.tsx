@@ -9,11 +9,20 @@ const navigation = [
 
 const Intro = () => {
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-gradient-to-b from-ixdark to-ixmed">
       <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <div className="relative z-10 pb-8 bg-gradient-to-b from-ixdark to-ixmed sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
             className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </svg>
+          <svg
+            className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 left-1200 lg:block "
             fill="currentColor"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
@@ -32,7 +41,7 @@ const Intro = () => {
                       <img
                         alt="Workflow"
                         className="w-auto h-8 sm:h-10"
-                        src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=100"
+                        src="https://tom.imgix.net/imgix-presskit.pdf?page=4&auto=format&w=100"
                       />
                     </a>
                     <div className="flex items-center -mr-2 md:hidden">
@@ -45,7 +54,7 @@ const Intro = () => {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                    <a key={item.name} href={item.href} className="font-medium text-white hover:text-gray-900">
                       {item.name}
                     </a>
                   ))}
@@ -100,12 +109,12 @@ const Intro = () => {
 
           <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight">
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight">
                 <span className="block xl:inline">All Your imgix Demos</span>{' '}
                 <br></br>
                 <span className="block text-orange-600 xl:inline">Code Examples</span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               imgix transforms, optimizes, and intelligently caches your entire asset library for faster pages, higher engagement, and a simpler workflow.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

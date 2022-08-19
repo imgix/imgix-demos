@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-light {
-    background: linear-gradient(0deg, rgba(12, 38, 51, 0) 12%, rgba(12, 20, 51, 0.75) 89%), linear-gradient(73deg, rgba(23, 42, 51, 0.9) 0%, rgba(87, 158, 194, 0.8) 61%), linear-gradient(252deg, #2a71bd 39%, #19293b 100%); }
-
-.gradient {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        top: 0;
-        right: 0;
-        z-index: -1; }
+.left-1200 {
+    left: 1200px;
+}
 
