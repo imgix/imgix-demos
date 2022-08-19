@@ -11,7 +11,7 @@ const Alert = (props: AlertProps) => {
   const { preview } = props;
   return (
 
-    <>
+    <div>
       <div
         className={cn('border-b', {
           'bg-accent-7 border-accent-7 text-white': preview,
@@ -46,7 +46,7 @@ const Alert = (props: AlertProps) => {
           </div>
         </Container>
       </div>
-    </>
+    </div>
 
   )
 }

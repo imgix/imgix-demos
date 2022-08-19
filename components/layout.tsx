@@ -16,13 +16,13 @@ const Layout = (props: LayoutProps) => {
     children
   } = props;
   return (
-    <>
+    <div>
       <Meta />
       <div className="min-h-screen">
         <main>{children}</main>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 export default Layout;
