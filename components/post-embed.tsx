@@ -10,12 +10,12 @@ const PostEmbed = (props: PostEmbedProps) => {
   } = props;
 
   return (
-    <>
+    <div>
       <div
       dangerouslySetInnerHTML={{ __html: embed }}
       >
       </div>
-    </>
+    </div>
   )
 }
 
