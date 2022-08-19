@@ -48,14 +48,14 @@ const PostHeader = (props: PostHeaderProps) => {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <Link href="/">
+                    <a href="/">
                       <span className="sr-only">Workflow</span>
                       <img
                         alt="Workflow"
                         className="w-auto h-8 sm:h-10"
                         src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=100"
                       />
-                    </Link>
+                    </a>
                     <div className="flex items-center -mr-2 md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Open main menu</span>
@@ -138,7 +138,7 @@ const PostHeader = (props: PostHeaderProps) => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <Link
-                    href="https://next-merge-six.vercel.app/"
+                    href="/"
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   ><a>See Other Demos</a></Link>
                 </div>
