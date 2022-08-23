@@ -2,7 +2,7 @@ import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-import { Author, Imgix } from 'interfaces';
+import { Author, Imgix, Category } from 'interfaces';
 
 type PostPreviewProps = {
   title: string,
@@ -10,6 +10,7 @@ type PostPreviewProps = {
   date: string,
   excerpt: string,
   author: Author,
+  category: Category,
   slug: string,
 };
 
@@ -20,6 +21,7 @@ const PostPreview = (props: PostPreviewProps) => {
     date,
     excerpt,
     author,
+    category,
     slug,
   } = props;
 
@@ -28,14 +30,23 @@ const PostPreview = (props: PostPreviewProps) => {
       <div className="mb-5">
         <CoverImage slug={slug} title={title} url={coverImage.imgix_url} />
       </div>
-      <h3 className="mb-3 text-3xl leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]"><a className="hover:underline">{title}</a></Link>
-      </h3>
-      <div className="mb-4 text-lg">
-        <Date dateString={date} />
+      <div className="flex flex-col justify-between flex-1 p-6 bg-white">
+        <div className='flex-1'>
+          <p className="text-sm font-medium text-indigo-600">
+            <a className='hover:underline'>
+              {category.title}
+            </a>
+          </p>
+          <h3 className="mb-3 text-3xl leading-snug">
+            <Link as={`/posts/${slug}`} href="/posts/[slug]"><a className="hover:underline">{title}</a></Link>
+          </h3>
+          <div className="mb-4 text-lg">
+            <Date dateString={date} />
+          </div>
+          <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
+        </div>
+        <Avatar name={author.title} picture={author.metadata.picture.imgix_url} />
       </div>
-      <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
-      <Avatar name={author.title} picture={author.metadata.picture.imgix_url} />
     </div>
   )
 }
