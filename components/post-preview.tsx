@@ -2,7 +2,8 @@ import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-import { Author, Imgix, Category } from 'interfaces';
+//import { Author, Imgix, Category } from 'interfaces';
+import { Author, Imgix } from 'interfaces';
 
 type PostPreviewProps = {
   title: string,
