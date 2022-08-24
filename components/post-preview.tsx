@@ -10,7 +10,7 @@ type PostPreviewProps = {
   date: string,
   excerpt: string,
   author: Author,
-  category: Category,
+  category: string,
   slug: string,
 };
 
@@ -34,7 +34,7 @@ const PostPreview = (props: PostPreviewProps) => {
         <div className='flex-1'>
           <p className="text-sm font-medium text-indigo-600">
             <a className='hover:underline'>
-              {category.title}
+            Category
             </a>
           </p>
           <h3 className="mb-3 text-3xl leading-snug">
