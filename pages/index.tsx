@@ -1,10 +1,10 @@
 import MoreDemos from "@/components/more-demos";
-import HeroPost from "@/components/hero-post";
+//import HeroPost from "@/components/hero-post";
 import Intro from "@/components/intro";
 import Layout from "@/components/layout";
 import { getAllPostsForHome } from "@/lib/api";
+//import { getAllImagePosts } from "@/lib/api";
 import Head from "next/head";
-
 import useSWR from "swr";
 import _ from "lodash";
 import { getMergeId, combineMergeContent } from "@/lib/merge";

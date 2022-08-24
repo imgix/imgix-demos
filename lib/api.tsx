@@ -45,6 +45,35 @@ export const getAllPostsWithSlug = async () => {
   return data.objects
 }
 
+export const getAllImagePosts2 = async () => {
+  const params = {
+    query: {
+      type: 'posts',
+      'metadata.category':'image'
+    },
+    props: 'slug',
+  }
+    const data = await bucket.getObjects(params)
+    return data.objects
+}
+
+export const getAllImagePosts = async (preview: boolean) => {
+  const params = {
+    query: {
+      type: 'posts',
+      'metadata.category.title':'image'
+    },
+    props: 'title,slug,metadata,created_at',
+    sort: '-created_at',
+    ...(preview && { status: 'all' }),
+  }
+  const data = await bucket.getObjects(params)
+  let allPosts = data.objects;
+  // Reorder
+  allPosts = _.orderBy(allPosts, ['created_at'], ['desc'])
+  return allPosts;
+}
+
 export const getMergeRequestPosts = async (merge_id: string) => {
   const data = await bucket.getMergeRequestObjects({
     id: merge_id
@@ -53,15 +82,9 @@ export const getMergeRequestPosts = async (merge_id: string) => {
 }
 
 export const getAllPostsForHome = async (preview: boolean) => {
-  const params = {
-    query: {
-      type: 'posts'
-    },
-    props: 'title,slug,metadata,created_at',
-    sort: '-created_at',
-    ...(preview && { status: 'all' }),
-  }
-  const data = await bucket.getObjects(params)
+  const data = await bucket.objects.find({ type: "posts" })
+  .props("title,slug,metadata,created_at")
+  .sort("-created_at")
   let allPosts = data.objects;
   // Reorder
   allPosts = _.orderBy(allPosts, ['created_at'], ['desc'])

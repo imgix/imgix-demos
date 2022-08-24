@@ -697,13 +697,14 @@ core-js-pure@^3.20.2:
   resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.23.3.tgz"
   integrity sha512-XpoouuqIj4P+GWtdyV8ZO3/u4KftkeDVMfvp+308eGMhCrA3lVDSmAxO0c6GGOcmgVlaKDrgWVMo49h2ab/TDA==
 
-cosmicjs@^4.1.7:
-  version "4.1.8"
-  resolved "https://registry.npmjs.org/cosmicjs/-/cosmicjs-4.1.8.tgz"
-  integrity sha512-tOA7dWevPggV8nxrx0QpYEsUYHFnCWPzXhxWhz3f8Qnx9mN9pSfHQSHEAO5dSLaXF04EFSIuK5JVNuyZ95s6Og==
+cosmicjs@^4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/cosmicjs/-/cosmicjs-4.2.5.tgz#9296a6e3ea4e1794fd0304613a4ed82389ccd4c5"
+  integrity sha512-1bRP1Wt3rem6XyTLA5P4O05LEVSftRRucuuUyThOXruL1Gg1nk5acTkL4DxU/aj+nwOh3zjAVqCdXuBntcfWzw==
   dependencies:
     axios "^0.21.1"
     form-data "^3.0.0"
+    regenerator-runtime "^0.13.9"
     typescript "^4.6.3"
 
 cross-spawn@^7.0.2:
@@ -2620,7 +2621,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-regenerator-runtime@^0.13.4:
+regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.9:
   version "0.13.9"
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
