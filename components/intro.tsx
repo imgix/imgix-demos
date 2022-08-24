@@ -120,7 +120,7 @@ const Intro = () => {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="https://dashboard.imgix.com/sign-up"
+                    href="https://dashboard.imgix.com/sign-up?utm_medium=referral&utm_source=demopage"
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-orange-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Try it Free
