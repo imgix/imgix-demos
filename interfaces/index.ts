@@ -10,12 +10,12 @@ export type Author = {
   }
 }
 
-export type Category = {
+/*export type Category = {
   title: string;
   metadata: {
     category;
   }
-}
+}*/
 
 
 export type Post = {
@@ -27,7 +27,7 @@ export type Post = {
   metadata: {
     cover_image: Imgix;
     author: Author;
-    category: Category;
+    //category: Category;
     excerpt: string;
     content: string;
     embed: string;

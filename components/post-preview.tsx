@@ -10,7 +10,7 @@ type PostPreviewProps = {
   date: string,
   excerpt: string,
   author: Author,
-  category: string,
+  //category: string,
   slug: string,
 };
 
@@ -21,7 +21,7 @@ const PostPreview = (props: PostPreviewProps) => {
     date,
     excerpt,
     author,
-    category,
+    //category,
     slug,
   } = props;
 
