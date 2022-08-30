@@ -3,6 +3,10 @@ export type Imgix = {
   imgix_url: string;
 }
 
+export type Category2 = {
+  value: string;
+}
+
 export type Author = {
   title: string;
   metadata: {
@@ -27,7 +31,7 @@ export type Post = {
   metadata: {
     cover_image: Imgix;
     author: Author;
-    value: string;
+    category2: Category2;
     excerpt: string;
     content: string;
     embed: string;

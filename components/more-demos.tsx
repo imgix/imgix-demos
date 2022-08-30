@@ -22,7 +22,7 @@ const MoreDemos = (props: MoreDemosProps) => {
             author={post.metadata.author}
             slug={post.slug}
             excerpt={post.metadata.excerpt}
-            category={post.metadata.category2.value}
+            category2={post.metadata.category2}
           />
         ))}
       </div>
