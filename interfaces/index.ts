@@ -27,7 +27,7 @@ export type Post = {
   metadata: {
     cover_image: Imgix;
     author: Author;
-    //category: Category;
+    value: string;
     excerpt: string;
     content: string;
     embed: string;

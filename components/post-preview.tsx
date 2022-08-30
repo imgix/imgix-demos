@@ -2,8 +2,8 @@ import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-//import { Author, Imgix, Category } from 'interfaces';
 import { Author, Imgix } from 'interfaces';
+//import { Author, Imgix } from 'interfaces';
 
 type PostPreviewProps = {
   title: string,
@@ -11,7 +11,7 @@ type PostPreviewProps = {
   date: string,
   excerpt: string,
   author: Author,
-  //category: string,
+  category: string,
   slug: string,
 };
 
@@ -22,7 +22,7 @@ const PostPreview = (props: PostPreviewProps) => {
     date,
     excerpt,
     author,
-    //category,
+    category,
     slug,
   } = props;
 
@@ -35,7 +35,7 @@ const PostPreview = (props: PostPreviewProps) => {
         <div className='flex-1'>
           <p className="text-sm font-medium text-indigo-600">
             <a className='hover:underline'>
-            Category
+            {category}
             </a>
           </p>
           <h3 className="mb-3 text-3xl leading-snug">
