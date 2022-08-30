@@ -23,6 +23,7 @@ const DynamicContainer = dynamic(() => import("@/components/container"), {
 
 type IndexProps = {
   allPosts: Post[];
+  posts: any;
   preview: boolean;
 };
 
@@ -74,6 +75,7 @@ export default Index;
 type staticProps = {
   preview: boolean;
   params: any;
+  slug: string;
 };
 
 export const getStaticProps = async (props: staticProps) => {
@@ -106,11 +108,3 @@ export const getStaticPaths = async (props: staticProps) => {
     fallback: true,
   }
 }
-
-/*export const getStaticProps = async (props: staticProps) => {
-  const { preview = null } = props;
-  const allPosts = (await getAllImagePosts(preview)) || [];
-  return {
-    props: { allPosts, preview },
-  };
-};*/
