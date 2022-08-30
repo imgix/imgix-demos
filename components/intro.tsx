@@ -3,8 +3,10 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Demos', href: '#' },
-  { name: 'About', href: '#' },
+  { name: 'image', href: '/categories/image' },
+  { name: 'video', href: '/categories/video' },
+  { name: 'sdk', href: '/categories/sdk' },
+  { name: 'asset management', href: '/categories/asset%20management' }
 ]
 
 const Intro = () => {
@@ -36,7 +38,7 @@ const Intro = () => {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
+                    <a href="/">
                       <span className="sr-only">Workflow</span>
                       <img
                         alt="Workflow"
@@ -128,7 +130,7 @@ const Intro = () => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="#"
+                    href="/"
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     See Demos

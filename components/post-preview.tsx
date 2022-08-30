@@ -3,7 +3,6 @@ import Date from './date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import { Author, Imgix, Category2 } from 'interfaces';
-//import { Author, Imgix } from 'interfaces';
 
 type PostPreviewProps = {
   title: string,
@@ -34,9 +33,7 @@ const PostPreview = (props: PostPreviewProps) => {
       <div className="flex flex-col justify-between flex-1 p-6 bg-white">
         <div className='flex-1'>
           <p className="text-sm font-medium text-indigo-600">
-            <a className='hover:underline'>
-            {category2.value}
-            </a>
+            <Link as={`/categories/${category2.value}`} href="/categories/[category2.value]"><a className="hover:underline">{category2.value}</a></Link>
           </p>
           <h3 className="mb-3 text-3xl leading-snug">
             <Link as={`/posts/${slug}`} href="/posts/[slug]"><a className="hover:underline">{title}</a></Link>

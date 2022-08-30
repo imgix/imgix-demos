@@ -45,6 +45,18 @@ export const getAllPostsWithSlug = async () => {
   return data.objects
 }
 
+export const getAllCategoriesWithSlug = async (category) => {
+  const params = {
+    query: {
+      type: 'posts',
+      'metadata.category2.value': category
+    },
+    props: 'slug',
+  }
+  const data = await bucket.getObjects(params)
+  return data.objects
+}
+
 export const getAllImagePosts2 = async () => {
   const params = {
     query: {
@@ -57,11 +69,11 @@ export const getAllImagePosts2 = async () => {
     return data.objects
 }
 
-export const getAllImagePosts = async (preview: boolean) => {
+export const getAllImagePosts = async (preview: boolean, category: string) => {
   const params = {
     query: {
       type: 'posts',
-      'metadata.category.title':'image'
+      'metadata.category2.value': category
     },
     props: 'title,slug,metadata,created_at',
     sort: '-created_at',
@@ -125,4 +137,14 @@ export const getPostAndMorePosts = async (slug: string, preview: boolean,) => {
     post: object,
     morePosts,
   }
+}
+
+export const getCategoriesSlug = async(slug) => {
+  const data = await bucket.objects.find({
+    type: 'posts',
+    'metadata.category2.value': slug
+  })
+  .props('slug,title,metadata,created_at')
+  .limit(20)
+  return data.objects
 }
