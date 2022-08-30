@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+//import { useRouter } from 'next/router'
 import MoreCategories from "@/components/more-categories";
 //import HeroPost from "@/components/hero-post";
 import Intro from "@/components/intro";
@@ -30,9 +30,6 @@ type IndexProps = {
 const Index = (props: IndexProps) => {
   let { posts, preview } = props;
   const merge_id = getMergeId();
-
-  const router = useRouter()
-  const { slug } = router.query
 
   const { data: mergePosts } = useSWR(
     merge_id ? `/api/get-merge-request-posts/${merge_id}` : null,
@@ -106,6 +103,6 @@ export const getStaticPaths = async (props: staticProps) => {
   const allPosts = (await getAllImagePosts(true, slug)) || []
   return {
     paths: allPosts.map((post) => `/categories/${post.slug}`),
-    fallback: true,
+    fallback: false,
   }
 }
