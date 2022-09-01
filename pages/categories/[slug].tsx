@@ -1,4 +1,4 @@
-//import { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import MoreCategories from "@/components/more-categories";
 //import HeroPost from "@/components/hero-post";
 import Intro from "@/components/intro";
@@ -85,7 +85,6 @@ export const getStaticProps = async (props: staticProps) => {
   } = props;
   const data = await getCategoriesSlug(params.slug)
   //const content = await markdownToHtml(data['post']?.metadata?.content || '')
-  console.log(data);
   return {
     props: {
       preview,
@@ -102,7 +101,7 @@ export const getStaticPaths = async (props: staticProps) => {
   const { preview = null, slug } = props;
   const allPosts = (await getAllImagePosts(true, slug)) || []
   return {
-    paths: allPosts.map((post) => `/categories/${post.slug}`),
+    paths: allPosts.map((post) => `/categories/${post.metadata.category2.value}`),
     fallback: true,
   }
 }
