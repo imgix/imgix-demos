@@ -9,8 +9,10 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Demos', href: '#' },
-  { name: 'About', href: '#' },
+  { name: 'image', href: '/categories/image' },
+  { name: 'video', href: '/categories/video' },
+  { name: 'sdk', href: '/categories/sdk' },
+  { name: 'asset management', href: '/categories/asset%20management' }
 ]
 
 type PostHeaderProps = {
@@ -139,7 +141,7 @@ const PostHeader = (props: PostHeaderProps) => {
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                   <Link
                     href="/"
-                  ><a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-700 border border-transparent rounded-md hover:bg-orange-600 md:py-4 md:text-lg md:px-10">See Other Demos</a></Link>
+                  ><a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-700 border border-transparent rounded-md hover:bg-orange-600 md:py-4 md:text-lg md:px-10">See All Demos</a></Link>
                 </div>
               </div>
             </div>
