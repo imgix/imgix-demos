@@ -38,12 +38,12 @@ const Intro = () => {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="https://next-merge-tomdale.vercel.app/">
+                    <a href="/">
                       <span className="sr-only">Workflow</span>
                       <img
                         alt="Workflow"
                         className="w-auto h-8 sm:h-10"
-                        src="https://tom.imgix.net/imgix-presskit.pdf?page=4&auto=format&w=100"
+                        src="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=100"
                       />
                     </a>
                     <div className="flex items-center -mr-2 md:hidden">
@@ -82,7 +82,7 @@ const Intro = () => {
                     <div>
                       <img
                         className="w-auto h-8"
-                        src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=100"
+                        src="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=100"
                         alt="imgix logo"
                       />
                     </div>
@@ -130,7 +130,7 @@ const Intro = () => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="https://next-merge-tomdale.vercel.app/"
+                    href="/"
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     See All Demos
