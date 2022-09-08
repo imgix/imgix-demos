@@ -2,5 +2,5 @@
 
 ## Demo
 
-[https://next-merge-tomdale.vercel.app/](https://next-merge-tomdale.vercel.app/)
+[https://demos.imgix.com/](https://demos.imgix.com/)
 
