@@ -5,8 +5,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = [
   { name: 'image', href: '/categories/image' },
   { name: 'video', href: '/categories/video' },
-  { name: 'sdk', href: '/categories/sdk' },
-  { name: 'asset management', href: '/categories/asset%20management' }
+  { name: 'sdk', href: '/categories/sdk' }
 ]
 
 const Intro = () => {
