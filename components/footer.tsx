@@ -105,8 +105,8 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-base font-medium text-white">imgix Website</h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <h3 className="text-base font-medium text-white">imgix</h3>
+                <ul role="list" className="mt-4 space-y-2">
                   {navigation.imgix.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white">
@@ -118,7 +118,7 @@ const Footer = () => {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-base font-medium text-white">Support</h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul role="list" className="mt-4 space-y-2">
                   {navigation.developers.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white">
@@ -132,7 +132,7 @@ const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-base font-medium text-white">Company</h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul role="list" className="mt-4 space-y-2">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white">
@@ -144,7 +144,7 @@ const Footer = () => {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-base font-medium text-white">Legal</h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul role="list" className="mt-4 space-y-2">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white">
@@ -165,7 +165,7 @@ const Footer = () => {
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <a
                   href="mailto:sales@imgix.com"
-                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-orange-600 border border-transparent rounded-md hover:bg-ixlblue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md bg-ixorange hover:bg-ixlblue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
                 >
                   sales@imgix.com
                 </a>
@@ -183,7 +183,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2011 - 2022 Zebrafish Labs
+            &copy; 2011 - 2022 imgix, Inc.
           </p>
         </div>
       </div>

@@ -13,24 +13,7 @@ const Intro = () => {
     <div className="relative overflow-hidden bg-gradient-to-b from-ixdark to-ixmed">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-8 bg-gradient-to-b from-ixdark to-ixmed sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <svg
-            className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
-          <svg
-            className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 left-1200 lg:block "
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
+          
 
           <Popover>
             <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
@@ -42,7 +25,8 @@ const Intro = () => {
                       <img
                         alt="Workflow"
                         className="w-auto h-8 sm:h-10"
-                        src="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=100"
+                        src="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=150"
+                        srcSet="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=150 1x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=150&dpr=2 2x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=150&dpr=3 3x"
                       />
                     </a>
                     <div className="flex items-center -mr-2 md:hidden">
@@ -55,7 +39,7 @@ const Intro = () => {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-white hover:text-gray-900">
+                    <a key={item.name} href={item.href} className="font-medium text-white hover:text-ixorange">
                       {item.name}
                     </a>
                   ))}
@@ -81,8 +65,9 @@ const Intro = () => {
                     <div>
                       <img
                         className="w-auto h-8"
-                        src="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=100"
+                        src="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=150"
                         alt="imgix logo"
+                        srcSet="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=150 1x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=150&dpr=2 2x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=4&auto=format&w=150&dpr=3 3x"
                       />
                     </div>
                     <div className="-mr-2">
@@ -97,7 +82,7 @@ const Intro = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                        className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-ixorange hover:bg-gray-50"
                       >
                         {item.name}
                       </a>
@@ -113,7 +98,7 @@ const Intro = () => {
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight">
                 <span className="block xl:inline">All Your imgix Demos</span>{' '}
                 <br></br>
-                <span className="block text-orange-600 xl:inline">Code Examples</span>
+                <span className="block pt-5 text-ixorange xl:inline">Code Examples</span>
               </h1>
               <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               imgix transforms, optimizes, and intelligently caches your entire asset library for faster pages, higher engagement, and a simpler workflow.
@@ -122,7 +107,7 @@ const Intro = () => {
                 <div className="rounded-md shadow">
                   <a
                     href="https://dashboard.imgix.com/sign-up?utm_medium=referral&utm_source=demopage"
-                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-orange-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-ixorange hover:brightness-110 md:py-4 md:text-lg md:px-10"
                   >
                     Try it Free
                   </a>
@@ -130,7 +115,7 @@ const Intro = () => {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="https://demos.imgix.com/"
-                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-ixlblue hover:brightness-110 md:py-4 md:text-lg md:px-10"
                   >
                     See All Demos
                   </a>

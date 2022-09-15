@@ -54,7 +54,8 @@ const PostHeader = (props: PostHeaderProps) => {
                       <img
                         alt="Workflow"
                         className="w-auto h-8 sm:h-10"
-                        src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=100"
+                        src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=150"
+                        srcSet="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=150 1x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=150&dpr=2 2x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=150&dpr=3 3x"
                       />
                     </a>
                     <div className="flex items-center -mr-2 md:hidden">
@@ -67,7 +68,7 @@ const PostHeader = (props: PostHeaderProps) => {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-ixorange">
                       {item.name}
                     </a>
                   ))}
@@ -93,7 +94,8 @@ const PostHeader = (props: PostHeaderProps) => {
                     <div>
                       <img
                         className="w-auto h-8"
-                        src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=100"
+                        src="https://tom.imgix.net/imgix-presskit.pdf?page=3&auto=format&w=150"
+                        srcSet="https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=150 1x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=150&dpr=2 2x, https://ix-www.imgix.net/press/imgix-press-kit.pdf?page=3&auto=format&w=150&dpr=3 3x"
                         alt="imgix logo"
                       />
                     </div>
@@ -109,7 +111,7 @@ const PostHeader = (props: PostHeaderProps) => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                        className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-ixorange hover:bg-gray-50"
                       >
                         {item.name}
                       </a>
@@ -132,7 +134,7 @@ const PostHeader = (props: PostHeaderProps) => {
                 <div className="rounded-md shadow">
                   <a
                     href="https://dashboard.imgix.com/sign-up?utm_medium=referral&utm_source=demopage"
-                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-orange-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-ixorange hover:brightness-110 md:py-4 md:text-lg md:px-10"
                   >
                     Try it Free
                   </a>
@@ -140,7 +142,7 @@ const PostHeader = (props: PostHeaderProps) => {
                 <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                   <Link
                     href="/"
-                  ><a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-700 border border-transparent rounded-md hover:bg-orange-600 md:py-4 md:text-lg md:px-10">See All Demos</a></Link>
+                  ><a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-ixlblue hover:brightness-110 md:py-4 md:text-lg md:px-10">See All Demos</a></Link>
                 </div>
               </div>
             </div>

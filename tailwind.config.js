@@ -14,6 +14,7 @@ module.exports = {
         ixdark: '#142541',
         ixmed: '#35668D',
         ixlblue: '#00BFFE',
+        ixorange: '#F8510F',
       },
       spacing: {
         28: '7rem',

@@ -19,9 +19,10 @@ const CoverImage = (props: CoverImageProps) => {
       src={url}
       //alt={`Cover Image for ${title}`}
       className={cn('lazyload shadow-small w-full', {
-        'hover:shadow-medium transition-shadow duration-200': slug,
+        'hover:shadow-medium border-slate-200 border-2 transition-shadow duration-200': slug,
       })}
       sizes="(min-width: 1024px) 40vw, 90vw"
+      imgixParams={{ fit: "crop", ar: "1.7:1"}}
       attributeConfig={{
         src: 'data-src',
         srcSet: 'data-srcset',
