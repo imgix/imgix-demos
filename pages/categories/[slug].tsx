@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import MoreCategories from "@/components/more-categories";
-//import HeroPost from "@/components/hero-post";
 import Intro from "@/components/intro";
 import Layout from "@/components/layout";
 //import { getAllPostsForHome } from "@/lib/api";
